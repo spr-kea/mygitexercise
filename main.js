@@ -21,8 +21,7 @@ function handleData(actors) {
         const myTemplate = document.querySelector("template").content;
         const clone = myTemplate.cloneNode(true);
         clone.querySelector("#name").textContent = actor.fullname;
-        clone.querySelector(".movie").textContent = actor.movie;
-
+        clone.querySelector("p.info").textContent = actor.movie;
         const mainEl = document.querySelector("main");
 
         mainEl.appendChild(clone);
@@ -35,6 +34,21 @@ const element = document.getElementById("myBtn");
 element.addEventListener("click", function () {
     removeHidden()
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // document.querySelector(".movie").addEventlistener("click",() => removeHidden());
 };
 

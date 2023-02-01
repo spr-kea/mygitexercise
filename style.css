@@ -1,3 +1,6 @@
+body{
+    background-color: #363020;
+}
 #myTemplate{
 display: flex;
 flex-direction: row;
@@ -6,21 +9,53 @@ justify-content: space-around;
 main{
     width: 80%;
   margin:auto ;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
   
 }
 .hidden{
     display: none;
 }
-.black{
-    color: white;
-}
+
     
 
-#movie{
-    background-color:blanchedalmond;
-    width: auto;
-    
-}
+
+article {
+    border: 5px solid #A49966;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .container {
+    background-color: #C7C7A6;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .container:hover {
+    cursor: pointer;
+  }
+  
+  .container_content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:darkkhaki;
+    border:solid 10px #A49966;
+    border-radius: 20px;
+  
+    padding: 2rem;
+    z-index: 2;
+  }
+  .container_content p{
+    font-size: 2rem;
+  }
+  
+  .container:hover .container_content {
+    display: block;
+    cursor: pointer;
+  }
