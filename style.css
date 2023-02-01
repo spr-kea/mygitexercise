@@ -1,0 +1,26 @@
+#myTemplate{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+main{
+    width: 80%;
+  margin:auto ;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10;
+  
+}
+.hidden{
+    display: none;
+}
+.black{
+    color: white;
+}
+    
+
+#movie{
+    background-color:blanchedalmond;
+    width: auto;
+    
+}
