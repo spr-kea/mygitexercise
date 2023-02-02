@@ -31,39 +31,4 @@ function handleData(actors) {
     });
 
 const element = document.getElementById("myBtn");
-element.addEventListener("click", function () {
-    removeHidden()
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // document.querySelector(".movie").addEventlistener("click",() => removeHidden());
 };
-
-
-
-
-function removeHidden() {
-    document.querySelector(".movie").classList.remove("black");
-    console.log("hi");
-};
-
-
-
-
-// .then(function(actors){
-//     document.querySelector("myTemplate").content;
-
-// })
